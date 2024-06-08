@@ -1,0 +1,337 @@
+/*  Profile  */
+.profile-container {
+    margin-top: 50px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.profile-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.profile-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    .profile-title {
+        font-size: 24px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    }
+}
+
+
+/*  User Page */
+.pagination .page-link{
+    color: #343a40;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-link:hover {
+    color: #343a40;
+    background-color: #fff;
+    border-color: #343a40;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+
+/*  Login  */
+.login-container {
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.login-form {
+    background-color: #464646;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(113, 113, 113, 0.2);
+    color: #fff;
+}
+
+.login-form h2 {
+    color: #E91E63;
+}
+
+.input-field {
+    background-color: #6e6e6e;
+    border: 1px solid #495057;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    background-color: #495057;
+    border-color: #E91E63;
+    color: #fff;
+}
+
+.login-button {
+    background-color: #E91E63;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-button:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    animation: slideIn 0.6s ease-out;
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px;
+    }
+    .login-form {
+        padding: 15px;
+    }
+    .login-button {
+        margin-top: 10px;
+    }
+}
+
+
+/*  Home  */
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+            ellipse 50% 35% at 50% 50%,
+            #2d2d2d,
+            transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #f1c0e0;
+    text-shadow: 0 0 0.6rem #f1c0e0, 0 0 1.5rem #6e0b4d,
+    -0.2rem 0.1rem 1rem #6e0b4d, 0.2rem 0.1rem 1rem #6e0b4d,
+    0 -0.5rem 2rem #2d2d2d, 0 0.5rem 3rem #2d2d2d;
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #f1c0e0;
+        text-shadow: 0 0 0.6rem #f1c0e0, 0 0 1.5rem #6e0b4d,
+        -0.2rem 0.1rem 1rem #6e0b4d, 0.2rem 0.1rem 1rem #6e0b4d,
+        0 -0.5rem 2rem #2d2d2d, 0 0.5rem 3rem #2d2d2d;
+    }
+    28%,
+    33% {
+        color: #6e0b4d;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #2d2d2d; /* Dark background */
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        color: #2d2d2d;
+        text-shadow: none;
+    }
+    100% {
+        color: #f1c0e0;
+        text-shadow: 0 0 0.6rem #f1c0e0, 0 0 1.5rem #6e0b4d,
+        -0.2rem 0.1rem 1rem #6e0b4d, 0.2rem 0.1rem 1rem #6e0b4d,
+        0 -0.5rem 2rem #2d2d2d, 0 0.5rem 3rem #2d2d2d;
+    }
+}
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

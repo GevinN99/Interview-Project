@@ -1,0 +1,32 @@
+.nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #E91E63;
+}
+
+.nav-text {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-text:hover {
+    color: #E91E63;
+}
+
+@media (max-width: 990px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .nav-link, .nav-text {
+        margin-right: 0;
+        display: block;
+        margin: 10px 0;
+    }
+}
