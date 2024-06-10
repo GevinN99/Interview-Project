@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 const Login = () => {
@@ -80,6 +81,11 @@ const Login = () => {
                             Login
                         </Button>
                     </Form>
+                    <div className="text-center mt-3">
+                        <p>
+                            Don't have an account? <Link to="/signup" className="text-decoration-none">Create one</Link>
+                        </p>
+                    </div>
                 </Col>
             </Row>
         </Container>

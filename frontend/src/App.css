@@ -64,13 +64,13 @@
 }
 
 
-/*  Login  */
-.login-container {
+/*  Login / Signup  */
+.login-container, .signup-container {
     padding: 30px;
     border-radius: 15px;
 }
 
-.login-form {
+.login-form, .signup-form {
     background-color: #464646;
     padding: 20px;
     border-radius: 10px;
@@ -78,7 +78,7 @@
     color: #fff;
 }
 
-.login-form h2 {
+.login-form h2, .signup-form h2 {
     color: #E91E63;
 }
 
@@ -95,7 +95,7 @@
     color: #fff;
 }
 
-.login-button {
+.login-button, .signup-button {
     background-color: #E91E63;
     border: none;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -103,7 +103,7 @@
     margin-top: 15px;
 }
 
-.login-button:hover {
+.login-button:hover, .signup-button:hover {
     background-color: #d81b60;
     transform: scale(1.05);
 }
@@ -119,18 +119,18 @@
     }
 }
 
-.login-container {
+.login-container, .signup-container {
     animation: slideIn 0.6s ease-out;
 }
 
 @media (max-width: 576px) {
-    .login-container {
+    .login-container, .signup-container {
         padding: 20px;
     }
-    .login-form {
+    .login-form, .signup-form {
         padding: 15px;
     }
-    .login-button {
+    .login-button, .signup-button {
         margin-top: 10px;
     }
 }
